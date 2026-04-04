@@ -15,7 +15,7 @@ public class Rabbit implements Prototype<Rabbit> {
         this.owner = owner;
     }
 
-    // COPY CONSTRUCTOR: Cách làm của bài mẫu Git
+    
     // Giúp thực hiện Deep Copy sạch sẽ hơn dùng super.clone()
     private Rabbit(Rabbit other) {
         this.name = other.name;
