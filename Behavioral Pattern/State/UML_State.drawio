@@ -1,0 +1,108 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="UML_State" name="UML State">
+    <mxGraphModel dx="1118" dy="736" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="client" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;Client&lt;/p&gt;" vertex="1">
+          <mxGeometry height="82" width="170" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="client_attrs" parent="client" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="170" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="client_sep" parent="client" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="170" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="client_methods" parent="client" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ main(args: String[]): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="170" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="state" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=42;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-style:italic;&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;State&lt;/p&gt;" vertex="1">
+          <mxGeometry height="112" width="260" x="393" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="state_attrs" parent="state" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="state_sep" parent="state" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="260" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="state_methods" parent="state" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ play(player: MediaPlayer): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ pause(player: MediaPlayer): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="260" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="player" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;MediaPlayer&lt;/p&gt;" vertex="1">
+          <mxGeometry height="118" width="300" x="840" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="player_attrs" parent="player" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- state: State&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="player_sep" parent="player" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="300" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="player_methods" parent="player" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ setState(state: State): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ play(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ pause(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="62" width="300" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="playing" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;PlayingState&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="300" x="373" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="playing_attrs" parent="playing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="playing_sep" parent="playing" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="300" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="playing_methods" parent="playing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ play(player: MediaPlayer): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ pause(player: MediaPlayer): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="300" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="paused" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;PausedState&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="300" x="756" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="paused_attrs" parent="paused" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="paused_sep" parent="paused" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="300" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="paused_methods" parent="paused" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ play(player: MediaPlayer): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ pause(player: MediaPlayer): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="300" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_0" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;dashed=1;endArrow=open;endFill=0;endSize=12;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="player" value="uses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="135" y="30" />
+              <mxPoint x="990" y="30" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_1" edge="1" parent="1" source="player" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;startArrow=diamondThin;startFill=0;startSize=16;endArrow=none;endFill=0;strokeColor=#000000;" target="state" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="757" y="109" />
+              <mxPoint x="757" y="109" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_2" edge="1" parent="1" source="playing" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;dashed=1;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="state" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_3" edge="1" parent="1" source="paused" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;dashed=1;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="state" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_4" edge="1" parent="1" source="playing" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;dashed=1;endArrow=open;endFill=0;endSize=12;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="player" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="523" y="460" />
+              <mxPoint x="1084" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_5" edge="1" parent="1" source="paused" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;dashed=1;endArrow=open;endFill=0;endSize=12;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="player" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="910" y="223" />
+              <mxPoint x="910" y="223" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

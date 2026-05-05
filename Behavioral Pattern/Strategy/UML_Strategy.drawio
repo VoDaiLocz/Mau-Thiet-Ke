@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="UML_Strategy" name="UML Strategy">
+    <mxGraphModel dx="1118" dy="736" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="client" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;Client&lt;/p&gt;" vertex="1">
+          <mxGeometry height="82" width="170" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="client_attrs" parent="client" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="170" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="client_sep" parent="client" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="170" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="client_methods" parent="client" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ main(args: String[]): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="170" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="encryptor" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;Encryptor&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="290" x="420" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="encryptor_attrs" parent="encryptor" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- strategy: EncryptionStrategy&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="290" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="encryptor_sep" parent="encryptor" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="290" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="encryptor_methods" parent="encryptor" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ setStrategy(strategy: EncryptionStrategy): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ encrypt(text: String): String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="290" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="strategy" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=42;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-style:italic;&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;EncryptionStrategy&lt;/p&gt;" vertex="1">
+          <mxGeometry height="94" width="300" x="820" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="strategy_attrs" parent="strategy" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="strategy_sep" parent="strategy" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="300" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="strategy_methods" parent="strategy" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ encrypt(text: String): String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="aes" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;AesEncryption&lt;/p&gt;" vertex="1">
+          <mxGeometry height="82" width="260" x="250" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="aes_attrs" parent="aes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aes_sep" parent="aes" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="aes_methods" parent="aes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ encrypt(text: String): String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rsa" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;RsaEncryption&lt;/p&gt;" vertex="1">
+          <mxGeometry height="82" width="260" x="540" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="rsa_attrs" parent="rsa" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rsa_sep" parent="rsa" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rsa_methods" parent="rsa" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ encrypt(text: String): String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="base64" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;Base64Encryption&lt;/p&gt;" vertex="1">
+          <mxGeometry height="82" width="260" x="840" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="base64_attrs" parent="base64" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="base64_sep" parent="base64" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="base64_methods" parent="base64" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ encrypt(text: String): String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_0" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;dashed=1;endArrow=open;endFill=0;endSize=12;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="encryptor" value="uses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="94" />
+              <mxPoint x="280" y="94" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_1" edge="1" parent="1" source="encryptor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;startArrow=diamondThin;startFill=0;startSize=16;endArrow=none;endFill=0;strokeColor=#000000;" target="strategy" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="804" y="100" />
+              <mxPoint x="804" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_2" edge="1" parent="1" source="aes" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;dashed=1;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="strategy" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_3" edge="1" parent="1" source="rsa" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;dashed=1;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="strategy" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_4" edge="1" parent="1" source="base64" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;dashed=1;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="strategy" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

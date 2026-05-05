@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="UML_Template_Method" name="UML Template_Method">
+    <mxGraphModel dx="1000" dy="659" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="client" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;Client&lt;/p&gt;" vertex="1">
+          <mxGeometry height="82" width="170" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="client_attrs" parent="client" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="170" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="client_sep" parent="client" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="170" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="client_methods" parent="client" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ main(args: String[]): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="170" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="recipe" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;PizzaRecipe&lt;/p&gt;" vertex="1">
+          <mxGeometry height="154" width="320" x="460" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="recipe_attrs" parent="recipe" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="320" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="recipe_sep" parent="recipe" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="320" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="recipe_methods" parent="recipe" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ makePizza(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;# prepareDough(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;# addSauce(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;# addToppings(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;# bake(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="98" width="320" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="cheese" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;CheesePizzaRecipe&lt;/p&gt;" vertex="1">
+          <mxGeometry height="82" width="300" x="310" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="cheese_attrs" parent="cheese" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cheese_sep" parent="cheese" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="300" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="cheese_methods" parent="cheese" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;# addToppings(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="veggie" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;VeggiePizzaRecipe&lt;/p&gt;" vertex="1">
+          <mxGeometry height="82" width="300" x="710" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="veggie_attrs" parent="veggie" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="veggie_sep" parent="veggie" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="300" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="veggie_methods" parent="veggie" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;# addToppings(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_0" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;dashed=1;endArrow=open;endFill=0;endSize=12;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="recipe" value="uses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="359" y="94" />
+              <mxPoint x="359" y="94" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_1" edge="1" parent="1" source="cheese" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="recipe" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_2" edge="1" parent="1" source="veggie" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="recipe" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,99 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="UML_Observer" name="UML Observer">
+    <mxGraphModel dx="1056" dy="696" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="client" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;Client&lt;/p&gt;" vertex="1">
+          <mxGeometry height="82" width="170" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="client_attrs" parent="client" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="170" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="client_sep" parent="client" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="170" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="client_methods" parent="client" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ main(args: String[]): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="170" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="subject" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=42;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-style:italic;&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;Subject&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="290" x="330" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="subject_attrs" parent="subject" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="290" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="subject_sep" parent="subject" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="290" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="subject_methods" parent="subject" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ registerObserver(o: Observer): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ removeObserver(o: Observer): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ notifyObservers(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="62" width="290" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="observer" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=42;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-style:italic;&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;Observer&lt;/p&gt;" vertex="1">
+          <mxGeometry height="94" width="330" x="750" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="observer_attrs" parent="observer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="330" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="observer_sep" parent="observer" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="330" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="observer_methods" parent="observer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ update(userName: String, status: String): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="330" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="connection" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;Connection&lt;/p&gt;" vertex="1">
+          <mxGeometry height="136" width="300" x="90" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="connection_attrs" parent="connection" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- userName: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- status: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- observers: List&lt;Observer&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="62" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="connection_sep" parent="connection" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="300" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="connection_methods" parent="connection" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ setStatus(status: String): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ notifyObservers(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="300" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="feed" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;SocialMediaFeed&lt;/p&gt;" vertex="1">
+          <mxGeometry height="118" width="330" x="620" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="feed_attrs" parent="feed" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- ownerName: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- statuses: List&lt;String&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="330" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="feed_sep" parent="feed" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="330" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="feed_methods" parent="feed" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ update(userName: String, status: String): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ showFeed(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="330" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_0" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;dashed=1;endArrow=open;endFill=0;endSize=12;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="connection" value="creates">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="221" y="91" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_1" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;dashed=1;endArrow=open;endFill=0;endSize=12;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="feed" value="creates">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="135" y="26" />
+              <mxPoint x="701" y="26" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_2" edge="1" parent="1" source="connection" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;dashed=1;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="subject" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_3" edge="1" parent="1" source="feed" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;dashed=1;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="observer" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_4" edge="1" parent="1" source="connection" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;startArrow=diamondThin;startFill=0;startSize=16;endArrow=none;endFill=0;strokeColor=#000000;" target="observer" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="504" />
+              <mxPoint x="1011" y="504" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

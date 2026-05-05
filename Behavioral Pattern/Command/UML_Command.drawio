@@ -1,0 +1,174 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="UML_Command" name="UML Command">
+    <mxGraphModel dx="1267" dy="835" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="client" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;Client&lt;/p&gt;" vertex="1">
+          <mxGeometry height="82" width="170" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="client_attrs" parent="client" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="170" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="client_sep" parent="client" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="170" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="client_methods" parent="client" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ main(args: String[]): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="170" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="command" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=42;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-style:italic;&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;Command&lt;/p&gt;" vertex="1">
+          <mxGeometry height="112" width="260" x="360" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="command_attrs" parent="command" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt; &lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="command_sep" parent="command" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="260" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="command_methods" parent="command" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ execute(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ undo(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="260" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="panel" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;TouchPanel&lt;/p&gt;" vertex="1">
+          <mxGeometry height="136" width="310" x="780" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="panel_attrs" parent="panel" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- commands: Map&lt;String, Command&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- history: Deque&lt;Command&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="310" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="panel_sep" parent="panel" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="310" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="panel_methods" parent="panel" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ setCommand(name: String, command: Command): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ press(name: String): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ undo(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="62" width="310" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="macro" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;MacroCommand&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="270" x="80" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="macro_attrs" parent="macro" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- commands: List&lt;Command&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="270" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="macro_sep" parent="macro" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="270" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="macro_methods" parent="macro" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ execute(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ undo(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="270" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="lightCommand" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;LightCommand&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="250" x="390" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="lightCommand_attrs" parent="lightCommand" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- light: LightingSystem&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lightCommand_sep" parent="lightCommand" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="250" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="lightCommand_methods" parent="lightCommand" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ execute(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ undo(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="250" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="blindsCommand" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;BlindsCommand&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="250" x="690" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="blindsCommand_attrs" parent="blindsCommand" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- blinds: Blinds&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="blindsCommand_sep" parent="blindsCommand" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="250" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="blindsCommand_methods" parent="blindsCommand" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ execute(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ undo(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="250" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="projectorCommand" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;ProjectorCommand&lt;/p&gt;" vertex="1">
+          <mxGeometry height="118" width="270" x="990" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="projectorCommand_attrs" parent="projectorCommand" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- projector: Projector&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- mode: ProjectorMode&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="270" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="projectorCommand_sep" parent="projectorCommand" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="270" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="projectorCommand_methods" parent="projectorCommand" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ execute(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ undo(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="270" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="light" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;LightingSystem&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="260" x="250" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="light_attrs" parent="light" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- scene: String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="light_sep" parent="light" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="light_methods" parent="light" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ setScene(scene: String): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ turnOff(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="blinds" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;Blinds&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="230" x="570" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="blinds_attrs" parent="blinds" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- open: boolean&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="230" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="blinds_sep" parent="blinds" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="230" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="blinds_methods" parent="blinds" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ open(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ close(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="230" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="projector" parent="1" style="swimlane;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;rounded=0;shadow=0;fontSize=12;fontFamily=Times New Roman;horizontal=1;startSize=30;collapsible=0;recursiveResize=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;font-weight:bold;&quot;&gt;Projector&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="300" x="860" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="projector_attrs" parent="projector" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;- currentMode: ProjectorMode&lt;/p&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="projector_sep" parent="projector" style="shape=line;strokeColor=#000000;html=1;rounded=0;" vertex="1">
+          <mxGeometry height="1" width="300" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="projector_methods" parent="projector" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;whiteSpace=wrap;fontSize=12;fontFamily=Times New Roman;" value="&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ setMode(mode: ProjectorMode): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:0px;margin-left:6px;&quot;&gt;+ turnOff(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="300" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_0" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;dashed=1;endArrow=open;endFill=0;endSize=12;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="panel" value="uses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="135" y="18" />
+              <mxPoint x="935" y="18" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_1" edge="1" parent="1" source="panel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;startArrow=diamondThin;startFill=0;startSize=16;endArrow=none;endFill=0;strokeColor=#000000;" target="command" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="733" y="74" />
+              <mxPoint x="733" y="74" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_2" edge="1" parent="1" source="macro" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;dashed=1;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_3" edge="1" parent="1" source="lightCommand" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;dashed=1;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_4" edge="1" parent="1" source="blindsCommand" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;dashed=1;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_5" edge="1" parent="1" source="projectorCommand" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;dashed=1;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;startSize=12;strokeColor=#000000;" target="command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_6" edge="1" parent="1" source="macro" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;startArrow=diamondThin;startFill=0;startSize=16;endArrow=none;endFill=0;strokeColor=#000000;" target="command_methods" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="215" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_7" edge="1" parent="1" source="lightCommand" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;endArrow=open;endFill=0;endSize=12;startArrow=none;startFill=0;strokeColor=#000000;" target="light" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_8" edge="1" parent="1" source="blindsCommand" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;endArrow=open;endFill=0;endSize=12;startArrow=none;startFill=0;strokeColor=#000000;" target="blinds" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_9" edge="1" parent="1" source="projectorCommand" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontFamily=Times New Roman;endArrow=open;endFill=0;endSize=12;startArrow=none;startFill=0;strokeColor=#000000;" target="projector" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
